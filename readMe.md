@@ -1,3 +1,12 @@
-###Welcome to:
+##Algorithms Library
 
-A playground and library for helpful algorithms. 
+```
+This is a small library for helpful algorithms implemented in Javascript.
+```
+
+Currently includes:
+* Factorials
+* Palindromes
+* Queues
+* Reversing
+* Transposing
