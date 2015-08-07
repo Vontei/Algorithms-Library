@@ -34,3 +34,11 @@ array.forEach(function (object) {
 })
 
 console.log(logged)
+
+
+
+
+//sort
+//some/
+//filter.
+//find

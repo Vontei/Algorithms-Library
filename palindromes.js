@@ -20,3 +20,7 @@ var isPalindrome = function (word){
 }
 
 console.log(isPalindrome('racecar'))
+
+
+
+///
