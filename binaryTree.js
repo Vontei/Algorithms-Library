@@ -388,6 +388,22 @@ var findNode = function(node){
   }
 }
 
+///or
+//this uses base case and build..sets the base case break first then continues.
+// if(node.right == null && node.left == null){
+//   console.log(node.value)
+// } else {
+//   console.log(node.value)
+//   if(node.right){
+//     findNode(node.right)
+//   }
+//   if(node.left){
+//     findNode(node.left)
+//   }
+// }
+
+
+
 
 bst = new BinarySearchTree();
 bst.add(6);
