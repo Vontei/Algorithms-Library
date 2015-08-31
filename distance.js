@@ -24,3 +24,8 @@ function Coordinates(x,y){
 function findDistance(node1,node2){
   return Math.hypot(node2.x-node1.x, node2.y-node1.y)
 }
+
+var person = new Coordinates(2,0)
+var flag = new Coordinates(4,3)
+var answer = findDistance(person, flag)
+console.log(answer)
