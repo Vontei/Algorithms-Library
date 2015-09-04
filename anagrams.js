@@ -7,6 +7,7 @@
     string2.forEach(function (string2) {
     if(string2.length != string1.length){
         answer.push('wrong length, '+ string2 + ' not an anagram')
+        return false
     }
     for(i=0;i<string2.length;i++){
         for(j=0;j<string1.length;j++){
@@ -33,6 +34,7 @@ var checkString = function(string1,string2){
   var holder = []
   if(string2.length != string1.length){
       console.log('wrong length not an anagram')
+      return false
   }
   for(i=0;i<string2.length;i++){
       for(j=0;j<string1.length;j++){
