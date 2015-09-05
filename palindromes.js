@@ -23,4 +23,11 @@ console.log(isPalindrome('racecar'))
 
 
 
-///
+
+
+var isP = function(input){
+ var word = input.split('').reverse().join('')
+ console.log(word == input ? 'true': 'false');
+}
+
+isP('racecar')

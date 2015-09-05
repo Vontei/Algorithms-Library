@@ -26,8 +26,8 @@ function primeDownTheLine(num){
         }
       }
     }
-  console.log(holder[2])
+  console.log(num + ' is prime, and the second prime after it is ' + holder[2])
   }
 }
 
-primeDownTheLine(31)
+primeDownTheLine(83)
