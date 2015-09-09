@@ -23,10 +23,12 @@ function convertTheCatholic (str){
 
 function rulesOnASunday(str){
   var array = convertTheCatholic(str);
-  if(array.length==1){return console.log(array[0])}
+  if(array.length==1){
+    return console.log(array[0])
+  }
+  
   var total = array.reduce(function (prev,curr) {
     var answer = 0
-
     if(array.length==2){
       if(prev<curr){
         answer = (curr-prev)
@@ -45,10 +47,11 @@ function rulesOnASunday(str){
       answer = (prev + curr)
       }
     }
+
     return answer
   })
   return(console.log(total))
 }
 
 
-rulesOnASunday('XVI')
+rulesOnASunday('MMX')
