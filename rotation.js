@@ -25,6 +25,8 @@ var z = y.indexOf(x[0])
 // }
 // console.log(result)
 
+console.log(x.split('').reverse().join(''))
+
 
 for(i=0; i<s1.length; i++){
     for(j=0;j<s2.length; j++){
@@ -37,4 +39,4 @@ for(i=0; i<s1.length; i++){
     }
 }
 
-console.log(result)
+console.log(result.join(''))

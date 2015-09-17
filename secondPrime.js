@@ -29,5 +29,7 @@ function primeDownTheLine(num){
   console.log(num + ' is prime, and the second prime after it is ' + holder[2])
   }
 }
+console.log(isPrime(4.5))
+
 
 primeDownTheLine(83)
