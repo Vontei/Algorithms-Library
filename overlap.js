@@ -1,12 +1,5 @@
-// var timeOne = new Date("December 25, 2015")
-// var timeTwo = new Date("December 27, 2015")
-// var a = Date.parse(timeOne)
-// var b = Date.parse(timeTwo)
-// var diff = (b-a)
-// var dayDiff = (diff / (24*60*60*1000))
-
 var timespans = {
-christmas: {
+  christmas: {
 		start: new Date("December 25, 2015"),
 		end: new Date("December 26, 2015")
 	},
@@ -16,12 +9,20 @@ christmas: {
 	},
   event1: {
 		start: new Date("March 20, 2015"),
-		end: new Date("March 22, 2015")
-	},
-	event2: {
-		start: new Date("March 21, 2015"),
 		end: new Date("March 24, 2015")
 	},
+	event2: {
+		start: new Date("April 21, 2015"),
+		end: new Date("April 28, 2015")
+	},
+  event3: {
+		start: new Date("March 19, 2015"),
+		end: new Date("March 20, 2015")
+	},
+	event4: {
+		start: new Date("March 19, 2015"),
+		end: new Date("March 22, 2015")
+	}
 }
 
 function DateMeasure(ms) {
@@ -40,29 +41,21 @@ function DateMeasure(ms) {
   this.seconds = s;
 };
 
-function isOverlap(t1,t2){
-  if (Date.parse(t1.start)>Date.parse(t2.start)){
-    var z = new DateMeasure(t1.start-t2.start);
-    var startDiff = new DateMeasure(t1.end-t1.start)
-    if(startDiff.days<z.days){
-      console.log('The timespans are ' + (z.days-startDiff.days) + ' days apart')
-    }
-  }
-}
-
-
 function diffIt(t1,t2){
   var overall = new DateMeasure(t2.end-t1.start);
+  console.log(overall)
   var startDiff= new DateMeasure(t1.end-t1.start)
   var endDiff = new DateMeasure(t2.end-t2.start);
+  var time;
   if ((overall.days-startDiff.days)<endDiff.days){
     var overlap = new DateMeasure(t1.end-t2.start)
-    var time;
     overlap.days>1 ? time='days' : time='day';
     console.log('These dates overlap by ' + overlap.days+ ' ' + time)
+  }
+  else{
+    var daysApart = new DateMeasure(t2.start-t1.end)
+    console.log('These events are separated by ' + daysApart.days + " days")
   }
 }
 
 diffIt(timespans.event1, timespans.event2)
-
-// isOverlap(timespans.christmas, timespans.halloween)
