@@ -4,20 +4,20 @@ var reverse = function(input){
 
 
 ///High Order
-// var result = input.map(function(e, i, arr){
-//   return arr[arr.length-1-i];
-// });
-// return result
-//
+var result = input.map(function(e, i, arr){
+  return arr[arr.length-1-i];
+});
+return result
+
 
 
 
 ///Middle
-var result = [];
-for (i=input.length-1; i>=0; i--){
-  result.push(input[i]);
-}
-  return result;
+// var result = [];
+// for (i=input.length-1; i>=0; i--){
+//   result.push(input[i]);
+// }
+//   return result;
 
 
 

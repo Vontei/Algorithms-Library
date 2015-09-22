@@ -7,6 +7,7 @@ var input = [
 
 
 
+
 var transpose = function (input) {
 
 ///Middle Answer
@@ -24,17 +25,15 @@ var transpose = function (input) {
 
 
 // Higher order answer
-var array = input.map(function(e1,i){
-  var temp = input.map(function(e2,j){
+return array = input.map(function(e1,i){
+  return temp = input.map(function(e2,j){
     return input[j][i]
   })
-  return temp;
 });
-  return array;
 
 
 
 
 
 }
-console.log(transpose(input))
+console.log(transpose(grid))

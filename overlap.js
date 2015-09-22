@@ -58,4 +58,4 @@ function diffIt(t1,t2){
   }
 }
 
-diffIt(timespans.event1, timespans.event2)
+diffIt(timespans.event3, timespans.event4)
